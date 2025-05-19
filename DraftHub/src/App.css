@@ -1,0 +1,87 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem 1rem;
+
+  /* Fill full viewport height */
+  min-height: 100vh;
+
+  /* Flexbox to center content vertically (optional) */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  color: #222;
+  text-align: center;
+}
+
+/* Big board grid container spacing */
+.MuiGrid-container {
+  justify-content: center;
+  gap: 12px;
+}
+
+/* Player cards */
+.MuiCard-root {
+  width: 300px !important; /* force fixed width */
+  margin: 0;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.MuiCard-root:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Typography tweaks */
+.MuiTypography-h5 {
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.MuiTypography-body2 {
+  color: #555;
+}
+
+/* Header styling if you have one */
+.header {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.player-card {
+  width: 1000px;
+  margin: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.player-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .player-card {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  #root {
+    padding: 0.5rem;
+    font-size: 85%;
+  }
+}
