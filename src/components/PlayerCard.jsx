@@ -5,7 +5,7 @@ const PlayerCard = ({ player, onClick, avgRank }) => {
     <Card
       sx={{
         width: {
-          xs: 2,
+          xs: 240,
           sm: 280,
           md: 320,
         },
